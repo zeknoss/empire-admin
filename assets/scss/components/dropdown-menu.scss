@@ -1,0 +1,36 @@
+.dropdown {
+    .dropdown-menu {
+        border:none;
+        overflow: hidden;
+
+        .dropdown-item {
+            font-size:11px;
+            font-weight:bold;
+            color:#ABB1B1;
+            outline:none;
+
+            &:hover, &:focus {
+                background:transparent;
+                color:#FF672D;
+            }
+
+            &.active {
+                color:#fff;
+                &:hover {
+                    background:darken($blue,5%);
+                }
+            }
+        }
+
+        .dropdown-header {
+            background:#F8F8F8;
+            font-size:10px;
+            height:21px;
+            margin-top:-10px;
+            margin-bottom:10px;
+            line-height:21px;
+            text-align:center;
+            padding:0;
+        }
+    }
+}

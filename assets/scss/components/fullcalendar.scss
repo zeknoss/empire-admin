@@ -1,0 +1,49 @@
+@import "~/node_modules/fullcalendar/dist/fullcalendar.css";
+
+.fc-unthemed {
+    th,
+    td,
+    thead,
+    tbody,
+    .fc-divider,
+    .fc-row,
+    .fc-content,
+    .fc-popover,
+    .fc-list-view,
+    .fc-list-heading td {
+        border-color: #e8e8e8;
+    }
+
+    &.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+        float: right;
+        background: #fff;
+        border-radius: 4px;
+        top:2px;
+        right:2px;
+        width:20px;
+        height:20px;
+        line-height:20px;
+        text-align:center;
+     }
+
+    td {
+        &.fc-highlight {
+            background-color: theme-color("primary");
+            opacity:1;
+            color:#fff;
+        }
+        &.fc-today {
+            background-color:lighten(theme-color("warning"),50%);
+        }
+    }
+
+    .fc {
+        .fc-row {
+            .fc-content-skeleton, .fc-helper-skeleton {
+                table, td td {
+
+                }
+            }
+        }
+    }
+}

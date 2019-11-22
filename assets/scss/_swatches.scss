@@ -1,0 +1,44 @@
+$blue:    #458BE6;
+$purple:  #A264E0;
+$pink:    #FC89D6;
+$red:     #E2693B;
+$orange:  #ff672d;
+$yellow:  #ffb849;
+$green: #3acb3a;
+$lime:    #E2FC89;
+$citrus:  #64E089;
+$text-muted: #929292;
+
+$theme-colors: (
+    "primary": $blue,
+    "success": $green,
+    "warning": $orange,
+    "info": $yellow,
+    "purple": $purple,
+    "lilac": $pink,
+    "lime": $lime,
+    "citrus": $citrus,
+    "silver": lighten($text-muted,35%)
+);
+
+$box-shadow: 0 0 10px rgba(#000, .3);
+$box-shadow-lg: 0 0 20px rgba(#000, .1);
+
+$gradients: (
+    "primary" rgb(39,137,180) rgb(24,66,164),
+    "warning" rgb(238,252,13) rgb(224,166,100),
+    "info" rgb(252,137,214) rgb(162,100,224),
+    "danger" rgb(255,72,249) rgb(224,100,100),
+    "success" rgb(137,252,248) rgb(104,100,224),
+    "pink-purple" #FC89D6 #A264E0,
+    "sunset" #FC8989 #E06464,
+    "aqua" #89BFFC #64E0CB,
+    "peach" #FF48F9 #E06464,
+    "lime" #64E089 #E2FC89,
+);
+
+@each $color in $gradients {
+    .gradient-#{nth($color,1)} {
+        @include linear-gradient(90deg,nth($color,2),nth($color,3));
+    }
+}

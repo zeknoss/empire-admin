@@ -1,0 +1,13 @@
+@import "components/cards";
+@import "components/forms";
+@import "components/buttons";
+@import "components/progress-bar";
+@import "components/dropdown-menu";
+@import "components/tables";
+@import "components/badges";
+
+$border-radius: 15px;
+
+.img-circle {
+    border-radius:100%;
+}

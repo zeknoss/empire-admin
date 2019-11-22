@@ -1,0 +1,51 @@
+.login {
+    position:relative;
+    height:100vh;
+
+    &:after {
+        position:absolute;
+        height:50%;
+        width:100%;
+        z-index:-1;
+        pointer-events: none;
+        content:"";
+        background:url('~assets/img/blue-waves.svg') no-repeat 50% 0;
+        background-size:cover;
+    }
+
+    .login-form {
+        width:310px;
+        height:50vh;
+        margin:0 auto 0;
+        padding-top:50vh;
+        position:relative;
+        top:-135px;
+
+        .logo {
+            display:inline-block;
+            width:180px;
+            margin:{
+                bottom:50px;
+            };
+
+            img {
+                width:180px;
+            }
+        }
+
+        .form-control {
+            background:#fff;
+            color:$blue;
+            font-weight:bold;
+            border-color:$blue;
+        }
+        input:-webkit-autofill {
+            background:#fff;
+            color:$blue;
+        }
+
+        .btn {
+            font-weight:bold;
+        }
+    }
+}

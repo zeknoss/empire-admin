@@ -1,0 +1,33 @@
+.snotifyToast {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-lg;
+
+    .snotifyToast__noIcon {
+        padding:15px;
+    }
+
+    .snotifyToast__title {
+        font-size:1.3em;
+        color: #fff;
+    }
+    .snotifyToast__body {
+        font-size:0.8em;
+        color: #fff;
+    }
+
+    &.snotify-simple {
+        background:$blue;
+    }
+    &.snotify-info {
+        background:$yellow;
+    }
+    &.snotify-success {
+        background:$green;
+    }
+    &.snotify-warning {
+        background:$orange;
+    }
+    &.snotify-error {
+        background:$red;
+    }
+}

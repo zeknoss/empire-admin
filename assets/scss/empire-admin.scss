@@ -1,0 +1,111 @@
+@import "mixins";
+@import "swatches";
+@import "typography";
+@import "variables";
+
+// Import FontAwesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+// Import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Override bootstrap component styles
+@import "bs-components";
+
+// Import Empire Admin specific components
+@import "sa-components";
+
+// Import plugin styles
+@import "~vue-snotify/styles/simple";
+
+body {
+    color:$text-muted;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0 none #ffffff;
+    border-radius: 50px;
+    &:hover {
+        background: #c8c8c8;
+    }
+    &:active {
+        background: #C8C8C8;
+    }
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0 none #ffffff;
+    border-radius: 50px;
+    &:hover {
+        background: #ffffff;
+    }
+    &:active {
+        background: #ffffff;
+    }
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.app-container {
+    background:#F5F5F5;
+    min-height:100vh;
+    transition: padding 0.4s;
+
+    .main-content {
+        transition: all 0.4s;
+    }
+
+    @media (max-width: 991px) {
+        &.menu-active {
+            height:100vh;
+            max-height:100vh;
+            overflow:hidden;
+
+            .main-content {
+                transform: translateX(300px);
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        padding-left:80px;
+        &.menu-active {
+            padding-left:300px;
+        }
+    }
+
+    .main-content {
+        padding-left:15px;
+    }
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.main-section {
+    padding:30px 0;
+}
+
+.cursor-pointer {cursor:pointer;}

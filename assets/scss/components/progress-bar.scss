@@ -1,0 +1,14 @@
+.progress-item {
+    color:#787878;
+    font-size:14px;
+    margin-bottom:15px;
+
+    .progress {
+        border-radius:4px;
+        height:11px;
+        .progress-bar {
+            border-radius:4px;
+            height:11px;
+        }
+    }
+}

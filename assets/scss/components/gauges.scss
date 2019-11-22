@@ -1,0 +1,47 @@
+.gauge {
+    border-radius:1em;
+    overflow:hidden;
+    margin-bottom:15px;
+    text-align:center;
+
+    .col {
+        min-height: 64px;
+        align-content: center;
+    }
+    .col-icon {
+        font-size: 1.5rem;
+        max-width:64px;
+        padding:0 1.2rem;
+    }
+    h4, h5, p, i {
+        line-height:1;
+        margin: auto;
+    }
+    h4 {
+        font-size:2.2em;
+    }
+    h5 {
+        font-size:1.2em;
+        font-weight:bold;
+    }
+    p {
+        font-size:0.8em;
+    }
+}
+
+@each $color, $colorCode in $theme-colors {
+    .gauge-#{$color} {
+        background: $colorCode linear-gradient(90deg, darken($colorCode,10%),$colorCode);
+        color: #fff;
+        font-weight:bold;
+        box-shadow: $box-shadow;
+
+        .col-icon {
+            background:rgba(lighten($colorCode,5%), .7);
+        }
+
+        .col:last-child {
+            background:rgba(darken($colorCode,10%),.7);
+        }
+    }
+}

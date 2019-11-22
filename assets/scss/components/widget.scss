@@ -1,0 +1,27 @@
+.widget {
+    @media (min-width:768px){
+        height:340px;
+
+        &.h-tab-widget {
+            height:303px;
+        }
+
+        .chart-container {
+            height:240px;
+        }
+    }
+
+    footer {
+        padding:30px 0;
+    }
+
+    &.vb {
+        margin-right:-30px;
+        padding-right:30px;
+    }
+    &.h-tab-widget.vb {
+        padding-top:20px;
+        margin-right:-20px;
+        padding-right:20px;
+    }
+}

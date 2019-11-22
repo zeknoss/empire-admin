@@ -1,0 +1,30 @@
+.table {
+    th, td {
+        border-top:0;
+        font-weight:bold;
+        font-size:0.8em;
+        vertical-align: middle;
+        padding:0.65rem 0.75rem;
+
+        .badge {
+            font-size:0.8em;
+        }
+    }
+    thead {
+        th {
+            border-bottom:0;
+            //color:darken($text-muted,10%);
+        }
+    }
+    &.table-striped {
+        tbody {
+            tr:nth-of-type(odd){
+                background:#F8F8F8;
+            }
+        }
+    }
+}
+
+.table-responsive.vb-content {
+    -ms-overflow-style: none;
+}
