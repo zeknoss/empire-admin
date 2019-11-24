@@ -280,6 +280,9 @@ aside.app-sidebar {
                             @include sidebar-item-vanish;
                         }
                     }
+                    ul {
+                        display:none;
+                    }
                 }
                 .dropdown-toggle::after {
                     display:none !important;

@@ -5,9 +5,7 @@
 
         <section class="main-content">
             <PageHeader/>
-            <div class="container-fluid">
-                <nuxt/>
-            </div>
+            <nuxt/>
         </section>
 
         <client-only>

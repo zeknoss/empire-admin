@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section dashboard">
+    <main-section>
         <b-row>
             <b-col cols="12" md="3">
                 <em-gauge type="success" icon="bell" title="Nerfs<br>Herded" content="23"></em-gauge>
@@ -146,7 +146,7 @@
                             <div class="widget h-tab-widget" v-bar="{useScrollbarPseudo: true}">
                                 <ul class="list-unstyled">
                                     <b-media tag="li" class="cursor-pointer mb-3" v-for="message in inbox" :key="message.from">
-                                        <img slot="aside" width="64" height="64" :src="message.avatar" class="rounded">
+                                        <img slot="aside" width="64" height="64" :src="message.avatar" :alt="'Message from ' + message.from" class="rounded">
 
                                         <div class="row">
                                             <div class="col">
@@ -174,7 +174,7 @@
                 </b-card>
             </b-col>
         </b-row>
-    </section>
+    </main-section>
 </template>
 
 <script>
@@ -183,9 +183,11 @@ import EmGauge from "../components/EmGauge";
 import ChartLegendItem from "../components/charts/chart-legend-item";
 import PieChart from "../components/charts/pie-chart";
 import Chart1 from "../components/dashboard/chart-1";
+import MainSection from "../components/layout-components/MainSection";
 
 export default {
     components: {
+        MainSection,
         EmGauge,
         Chart1,
         PieChart,

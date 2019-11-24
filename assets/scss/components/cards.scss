@@ -6,12 +6,12 @@
     margin-bottom:30px;
 
     .card-header {
-        background:transparent;
         border: none;
         &[class*='bg-'] {
             padding:20px 30px 10px;
         }
         &:not([class*='bg-']) {
+            background:transparent;
             padding:30px 30px 0;
         }
         color: $text-muted;
@@ -135,6 +135,19 @@
             > .tab-pane {
                 padding:0 20px 20px;
             }
+        }
+    }
+
+    &.profile-card {
+        text-align:center;
+        margin-top:-104px;
+        .card-header {
+            z-index:2;
+        }
+        .card-body {
+            margin-top: -75px;
+            border-radius: $border-radius-sm;
+            box-shadow: $box-shadow-lg;
         }
     }
 }

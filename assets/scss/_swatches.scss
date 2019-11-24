@@ -38,7 +38,7 @@ $gradients: (
 );
 
 @each $color in $gradients {
-    .gradient-#{nth($color,1)} {
+    .gradient-#{nth($color,1)}, .bg-gradient-#{nth($color,1)} {
         @include linear-gradient(90deg,nth($color,2),nth($color,3));
     }
 }
