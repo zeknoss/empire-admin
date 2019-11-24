@@ -102,6 +102,10 @@ input[type='password'] {
     color: $text-muted;
     font-size:0.85em;
     letter-spacing:1px;
+
+    &.form-control-lg {
+        font-size:1.1em;
+    }
 }
 
 .col-form-label {
