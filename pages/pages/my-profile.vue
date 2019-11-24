@@ -62,7 +62,7 @@
                         </b-col>
                         <b-col sm="4">
                             <b-form-group label="Phone">
-                                <b-input placeholder="Phone" size="lg" type="phone" value="+905555555555"></b-input>
+                                <b-input placeholder="Phone" size="lg" value="+905555555555"></b-input>
                             </b-form-group>
                         </b-col>
                     </b-row>
@@ -107,8 +107,8 @@
                     </b-row>
                     <hr class="w-50 mx-auto">
                     <b-row>
-                        <b-col size="4" lg="2" v-for="n in 12">
-                            <b-img :src="'http://lorempixel.com/200/200/people/' + n%10" thumbnail fluid-grow class="mb-3"></b-img>
+                        <b-col size="4" lg="2" v-for="n in 12" :key="n">
+                            <b-img :src="'https://loremflickr.com/200/200/?lock=' + n%10" thumbnail fluid-grow class="mb-3"></b-img>
                         </b-col>
                     </b-row>
                 </b-card>

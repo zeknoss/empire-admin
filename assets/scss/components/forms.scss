@@ -98,7 +98,8 @@ input[type=range] {
 
 input[type='text'],
 input[type='email'],
-input[type='password'] {
+input[type='password'],
+textarea {
     color: $text-muted;
     font-size:0.85em;
     letter-spacing:1px;
