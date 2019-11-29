@@ -1,10 +1,14 @@
 <template>
-    <div></div>
+    <div class="login">
+        <div class="container text-center">
+
+        </div>
+    </div>
 </template>
 <script>
     export default {
         layout: "fourOhOne",
         name: "index",
-        auth: "guest"
+        auth: false
     }
 </script>

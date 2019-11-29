@@ -1,48 +1,37 @@
 <template>
-    <section class="main-section">
-        <b-card>
-            <b-card-body>
-                <no-ssr>
-
-                </no-ssr>
-            </b-card-body>
-            <b-card-footer class="bg-transparent">
+    <main-section :header-title="'asd'" header-bg="lime">
+        <b-card footer-bg-variant="white" body-class="px-0">
+            <empire-calendar
+                v-if="events.length > 0"
+                :events="events"
+            ></empire-calendar>
+            <div slot="footer">
                 <p>For documentation please visit <a href="https://github.com/CroudTech/vue-fullcalendar#readme" target="_blank">here</a></p>
-            </b-card-footer>
+            </div>
         </b-card>
-    </section>
+    </main-section>
 </template>
 
 <script>
+    import MainSection from "../../components/layout-components/MainSection";
+    import EmpireCalendar from "../../components/EmpireCalendar";
+
     export default {
         name: "calendar",
-        head () {
-            return {
-                title: "Calendar"
-            }
+        components: {
+            EmpireCalendar,
+            MainSection,
+        },
+        methods: {
         },
         data(){
             return {
-                config: {
-                    themeSystem: 'bootstrap'
-                },
-                events: [
-                    {
-                        title  : 'event1',
-                        start  : '2010-01-01',
-                    },
-                    {
-                        title  : 'event2',
-                        start  : '2010-01-05',
-                        end    : '2010-01-07',
-                    },
-                    {
-                        title  : 'event3',
-                        start  : '2010-01-09T12:30:00',
-                        allDay : false,
-                    },
-                ]
+                events: []
             }
+        },
+        mounted(){
+            this.$axios.get('calendar/events')
+                .then(response => this.events = response.data.data);
         }
     }
 </script>

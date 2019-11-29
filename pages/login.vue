@@ -20,8 +20,7 @@
                 </b-form-group>
 
                 <b-form-group>
-                    <b-form-input type="password" name="password" v-model="password"
-                                  placeholder="Password"></b-form-input>
+                    <b-form-input type="password" name="password" v-model="password" placeholder="Password"></b-form-input>
                 </b-form-group>
                 <b-button type="submit" variant="white" class="bg-white text-primary" block>Login</b-button>
             </form>

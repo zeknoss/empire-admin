@@ -29,7 +29,10 @@ export default {
     ** Global CSS
     */
     css: [
-        '@/assets/scss/empire-admin.scss'
+        '@/node_modules/@fullcalendar/core/main.css',
+        '@/node_modules/@fullcalendar/daygrid/main.css',
+        '@/node_modules/@fullcalendar/bootstrap/main.css',
+        '@/assets/scss/empire-admin.scss',
     ],
     /*
     ** Plugins to load before mounting the App

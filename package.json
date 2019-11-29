@@ -12,6 +12,10 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.11.2",
+        "@fullcalendar/core": "^4.3.1",
+        "@fullcalendar/daygrid": "^4.3.0",
+        "@fullcalendar/vue": "^4.3.1",
+        "@fullcalendar/bootstrap": "^4.3.0",
         "@nuxtjs/auth": "^4.8.4",
         "@nuxtjs/axios": "^5.3.6",
         "@nuxtjs/pwa": "^3.0.0-0",
