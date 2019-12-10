@@ -12,10 +12,13 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.11.2",
+        "@fullcalendar/bootstrap": "^4.3.0",
         "@fullcalendar/core": "^4.3.1",
         "@fullcalendar/daygrid": "^4.3.0",
+        "@fullcalendar/timegrid": "^4.3.0",
+        "@fullcalendar/list": "^4.3.0",
+        "@fullcalendar/interaction": "^4.3.0",
         "@fullcalendar/vue": "^4.3.1",
-        "@fullcalendar/bootstrap": "^4.3.0",
         "@nuxtjs/auth": "^4.8.4",
         "@nuxtjs/axios": "^5.3.6",
         "@nuxtjs/pwa": "^3.0.0-0",
@@ -29,6 +32,7 @@
         "vue-chartjs": "^3.5.0",
         "vue-moment": "^4.0.0",
         "vue-snotify": "^3.2.1",
+        "vue-niege": "^0.1.1",
         "vuebar": "^0.0.20",
         "vuex": "^3.1.2"
     },

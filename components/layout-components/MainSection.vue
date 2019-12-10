@@ -5,6 +5,7 @@
                 <span v-html="headerTitle"></span>
                 <small class="small font-weight-light d-block" v-html="headerSubtitle"></small>
             </div>
+            <slot name="header-end"></slot>
         </header>
         <slot></slot>
     </section>
@@ -56,6 +57,12 @@
             color:#fff;
             padding: 30px;
             box-sizing: border-box;
+
+            display:flex;
+
+            .h1 {
+                flex-basis: 100%;
+            }
         }
     }
 </style>

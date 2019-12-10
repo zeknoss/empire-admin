@@ -12,36 +12,88 @@
         border-color: #e8e8e8;
     }
 
-    &.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
-        float: right;
-        background: #fff;
-        border-radius: 4px;
-        top:2px;
-        right:2px;
-        width:20px;
-        height:20px;
-        line-height:20px;
-        text-align:center;
-     }
+    .fc-header-toolbar {
+        padding: 0 1.5rem;
+    }
 
     td {
         &.fc-highlight {
-            background-color: theme-color("primary");
-            opacity:1;
+            background-color: theme-color("dark");
+            opacity:.2;
             color:#fff;
         }
         &.fc-today {
-            background-color:lighten(theme-color("warning"),50%);
+            background-color: rgba(theme-color("primary"),.2);
         }
     }
 
-    .fc {
-        .fc-row {
-            .fc-content-skeleton, .fc-helper-skeleton {
-                table, td td {
+    .fc-body {
+        > tr > .fc-widget-content {
+            border: 0;
+        }
+    }
 
+    .fc-content-skeleton, .fc-helper-skeleton {
+        .fc-day-top {
+            padding:.5rem;
+
+            .fc-day-number {
+                padding: .3rem .4rem;
+                width:30px;
+                height:30px;
+                line-height:30px;
+                float: none;
+                display: inline-block;
+                background: #e8e8e8;
+                color:darken(#e8e8e8, 30%);
+                border-radius: $border-radius-sm;
+                font-weight:bold;
+                text-align:center;
+            }
+            &.fc-today {
+                .fc-day-number {
+                    background:theme-color(primary);
+                    color:#fff;
                 }
             }
+        }
+
+        .fc-day-grid-event {
+            margin:2px .5rem;
+        }
+
+        .fc-event {
+            .fc-title {
+                padding: .4rem .5rem;
+                display:block;
+                color:#fff;
+                overflow:hidden;
+                font-weight:bold;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .fc-day-grid {
+        table {
+            .fc-day {
+                border-bottom:0;
+                &:first-child {
+                    border-left:0;
+                }
+                &:last-child {
+                    border-right:0;
+                }
+            }
+        }
+    }
+
+    .fc-widget-header {
+        th:first-child {
+            border-left:0;
+        }
+        th:last-child {
+            border-right:0;
         }
     }
 }

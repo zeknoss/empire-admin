@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import EmpireCalendar from '~/components/empire-calendar'
+import EmpireCalendar from '../components/EmpireCalendar'
 
 Vue.component('empire-calendar', EmpireCalendar);

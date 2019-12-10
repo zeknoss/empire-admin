@@ -1,0 +1,22 @@
+.showcase-primary {
+    position:relative;
+    padding-top:150px;
+
+    > header {
+        z-index:0;
+        position:absolute;
+        left:-15px;
+        right:0;
+        top:0;
+        height:200px;
+        color:#fff;
+        padding: 30px;
+        box-sizing: border-box;
+
+        display:flex;
+
+        .h1 {
+            flex-basis: 100%;
+        }
+    }
+}

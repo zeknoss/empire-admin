@@ -44,6 +44,16 @@ export default {
             src: './plugins/vue-snotify',
             ssr: false
         },
+        {
+            src: './plugins/full-calendar',
+            ssr: false
+        },
+        // This is only for the welcome and login purposes, you can remove it along with the dependency
+        '@/plugins/snowfall',
+        {
+            src: './plugins/snowfall',
+            ssr: false
+        },
     ],
 
     router: {
@@ -59,10 +69,23 @@ export default {
     */
     modules: [
         ['bootstrap-vue/nuxt', {css: false}],
+        // Remember to set the baseUrl setting for axios if you want to use it
         ['@nuxtjs/axios', {baseURL: 'http://api.1pxup.com'}],
         '@nuxtjs/auth',
         '@nuxtjs/pwa',
     ],
+
+    /**
+     * Transitions
+     */
+    layoutTransition: {
+        name: 'layout',
+        mode: 'out-in'
+    },
+    pageTransition: {
+        name: 'page',
+        mode: 'out-in'
+    },
 
     /*
     ** Axios module configuration
