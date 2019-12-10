@@ -6,40 +6,32 @@
         position:absolute;
         height:50%;
         width:100%;
-        bottom:0;
+        top:0;
         z-index:-1;
         pointer-events: none;
         content:"";
-        background:url('~assets/img/blue-waves.svg') no-repeat 50% 0;
-        background-size:cover;
+        background:#85C7FF url('~assets/img/mountains.svg') no-repeat 50% 100%;
+        background-size:contain;
     }
 
-    .login-form {
-        width:310px;
+    .logo {
+        margin:{
+            top:-258px;
+            bottom:20px;
+        };
+
+        img {
+            width:240px;
+        }
+    }
+
+    .container {
+        max-width:310px;
         height:50vh;
-        margin:0 auto 0;
         padding-top:50vh;
+        margin:0 auto 0;
         position:relative;
-        top:-135px;
 
-        .logo {
-            display:inline-block;
-            width:180px;
-            margin:{
-                bottom:50px;
-            };
-
-            img {
-                width:180px;
-            }
-        }
-
-        .form-control {
-            background:#fff;
-            color:$blue;
-            font-weight:bold;
-            border-color:$blue;
-        }
         input:-webkit-autofill {
             background:#fff;
             color:$blue;

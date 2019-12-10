@@ -3,14 +3,17 @@
         <div class="container text-center">
             <form method="post" class="login-form" action="javascript:;" @submit="login">
                 <div class="logo">
-                    <img src="@/assets/img/sail-admin-logo.svg" alt="Empire Admin">
+                    <img src="@/assets/img/empire-logo@2x.png" alt="Empire Admin">
                 </div>
+                <b-img src="@/assets/img/empire-logotype.svg" class="mb-4" />
+
+                <p class="mb-2"><small>Please choose a user from dropdown to login</small></p>
                 <b-form-group>
-                    <b-input-group>
-                        <b-form-input type="email" name="email" v-model="email" placeholder="E-mail"></b-form-input>
-                        <b-dropdown text="Dropdown" variant="white text-primary border-primary" slot="append" right>
+                    <b-input-group size="lg">
+                        <b-form-input type="email" name="email" v-model="email" placeholder="E-mail" required />
+                        <b-dropdown text="Dropdown" variant="primary shadow-none border-transparent" slot="append" right>
                             <template slot="button-content">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"/>
                             </template>
                             <b-dropdown-header>Login as</b-dropdown-header>
                             <b-dropdown-item @click="setLogin('admin')">Admin</b-dropdown-item>
@@ -20,16 +23,23 @@
                 </b-form-group>
 
                 <b-form-group>
-                    <b-form-input type="password" name="password" v-model="password" placeholder="Password"></b-form-input>
+                    <b-form-input type="password" name="password" size="lg" v-model="password" placeholder="Password" required />
                 </b-form-group>
-                <b-button type="submit" variant="white" class="bg-white text-primary" block>Login</b-button>
+                <b-button type="submit" variant="primary" size="lg" block>Login</b-button>
             </form>
         </div>
+        <client-only>
+            <Snow
+                zIndex="2"
+                :wind="1"
+                :swing="3"
+                speed="m"
+                color="#ffffff"/>
+        </client-only>
     </div>
 </template>
 
 <script>
-
 export default {
     name: "Login",
     layout: "fourOhOne",
