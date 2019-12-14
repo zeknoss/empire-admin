@@ -1,3 +1,7 @@
+@import '@/node_modules/@fullcalendar/core/main.css';
+@import '@/node_modules/@fullcalendar/daygrid/main.css';
+@import '@/node_modules/@fullcalendar/timegrid/main.css';
+@import '@/node_modules/@fullcalendar/bootstrap/main.css';
 .fc-unthemed {
     th,
     td,
@@ -32,6 +36,9 @@
             border: 0;
         }
     }
+    .fc-divider {
+        display:none;
+    }
 
     .fc-content-skeleton, .fc-helper-skeleton {
         .fc-day-top {
@@ -60,6 +67,12 @@
 
         .fc-day-grid-event {
             margin:2px .5rem;
+            &.fc-not-end {
+                margin-right:0;
+            }
+            &.fc-not-start {
+                margin-left:0;
+            }
         }
 
         .fc-event {
@@ -88,12 +101,16 @@
         }
     }
 
-    .fc-widget-header {
-        th:first-child {
+    .fc-head {
+        > tr > .fc-widget-header {
             border-left:0;
-        }
-        th:last-child {
             border-right:0;
+            th:first-child {
+                border-left:0;
+            }
+            th:last-child {
+                border-right:0;
+            }
         }
     }
 }

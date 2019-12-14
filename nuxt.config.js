@@ -29,9 +29,6 @@ export default {
     ** Global CSS
     */
     css: [
-        '@/node_modules/@fullcalendar/core/main.css',
-        '@/node_modules/@fullcalendar/daygrid/main.css',
-        '@/node_modules/@fullcalendar/bootstrap/main.css',
         '@/assets/scss/empire-admin.scss',
     ],
     /*
