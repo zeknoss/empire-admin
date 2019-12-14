@@ -8,7 +8,7 @@ Interested in a custom solution? Contact me at burak@burakgurbuz.com and let me 
 
 ## Main Features
 - [x] Responsiveness (wip)
-- [x] Navigation
+- [x] Custom Navigation
 - [x] Authentication (route guards)
 - [ ] Page header (wip)
 
@@ -16,7 +16,7 @@ Interested in a custom solution? Contact me at burak@burakgurbuz.com and let me 
 - [x] Dashboard
 - [x] Profile Page
 - [x] Login
-- [ ] Calendar (wip)
+- [x] Calendar
 - [ ] Register
 - [ ] Much moar on its way!
 

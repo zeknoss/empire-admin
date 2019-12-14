@@ -31,8 +31,7 @@
                 this.$emit('eventClick', {
                     id: event.event.id,
                     title: event.event.title,
-                    start: start.toISOString().slice(0,10),
-                    end: end.toISOString().slice(0,10),
+                    state: event.event.classNames[1]
                 });
             }
         },

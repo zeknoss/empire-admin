@@ -3,7 +3,7 @@
         <header v-if="headerValid" :class="'gradient-' + headerBg">
             <div class="h1">
                 <span v-html="headerTitle"></span>
-                <small class="small font-weight-light d-block" v-html="headerSubtitle"></small>
+                <small class="font-weight-light d-block" v-html="headerSubtitle"></small>
             </div>
             <slot name="header-end"></slot>
         </header>
@@ -62,6 +62,10 @@
 
             .h1 {
                 flex-basis: 100%;
+                small {
+                    display:block;
+                    font-size:60%;
+                }
             }
         }
     }
