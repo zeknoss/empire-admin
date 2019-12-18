@@ -35,6 +35,7 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
+        '@/plugins/empire-admin',
         '@/plugins/vue-bar',
         '@/plugins/vue-moment',
         {

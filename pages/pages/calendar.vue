@@ -46,7 +46,7 @@
 </template>
 
 <script>
-    import MainSection from "../../components/layout-components/MainSection";
+    import MainSection from "../../components/Layout/MainSection";
     import {findIndex} from "lodash";
 
     export default {

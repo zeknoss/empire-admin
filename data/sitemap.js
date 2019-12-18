@@ -77,7 +77,7 @@ export default [
     },
     {
         title: "Charts",
-        description: "Give your users some eye-candy graphical charts",
+        description: "Give your users some eye-candy graphical Charts",
         path: "/charts",
         icon: "chart-pie",
         namespace: "mainMenu"

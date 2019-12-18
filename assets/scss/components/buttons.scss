@@ -29,7 +29,16 @@
         }
     }
 
-    border-radius:32px;
+    &.btn-xl {
+        @include button-size(
+            $btn-padding-y-lg*$btn-xl-multiplier,
+            $btn-padding-x-lg*$btn-xl-multiplier,
+            $btn-font-size,
+            $btn-line-height-lg*$btn-xl-multiplier,
+            $btn-border-radius-lg*$btn-xl-multiplier
+        );
+        border-radius:$btn-border-radius*$btn-xl-multiplier;
+    }
 }
 
 .btn.no-caret {

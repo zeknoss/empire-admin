@@ -21,6 +21,11 @@ export default {
                     labels: {
                     }
                 },
+                layout: {
+                    padding: {
+                        top: 3
+                    }
+                },
                 lineTension: .4,
                 scales: {
                     yAxes: [

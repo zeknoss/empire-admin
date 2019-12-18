@@ -25,7 +25,7 @@
                 <b-form-group>
                     <b-form-input type="password" name="password" size="lg" v-model="password" placeholder="Password" required />
                 </b-form-group>
-                <b-button type="submit" variant="primary" size="lg" block>Login</b-button>
+                <b-button type="submit" variant="primary" size="xl" block>Login</b-button>
             </form>
         </div>
         <client-only>

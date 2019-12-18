@@ -20,7 +20,7 @@
                 <chart-1
                     :line-chart-data="lineChartData" :data-sets="dataSets"
                     @fillData="fillData" @switchData="switchData"
-                ></chart-1>
+                />
             </b-col>
             <b-col md="6" lg="4">
                 <b-card>
@@ -38,7 +38,7 @@
                                 <div class="float-right">{{ influence[2] }}%</div>
                             </header>
                             <b-progress :max="100">
-                                <b-progress-bar :variant="'primary gradient-' + influence[3]" :value="influence[2]"></b-progress-bar>
+                                <b-progress-bar :variant="'primary gradient-' + influence[3]" :value="influence[2]"/>
                             </b-progress>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                         <h6 class="card-subtitle">Emperor's most favourite force powers</h6>
                     </div>
                     <div class="widget">
-                        <pie-chart :chart-data="pieChartData" :height="300" v-if="pieChartData !== null"></pie-chart>
+                        <pie-chart :chart-data="pieChartData" :height="300" v-if="pieChartData !== null"/>
                     </div>
                 </b-card>
             </b-col>
@@ -179,15 +179,13 @@
 
 <script>
 import {map} from "lodash";
-import EmGauge from "../components/EmGauge";
-import ChartLegendItem from "../components/charts/chart-legend-item";
-import PieChart from "../components/charts/pie-chart";
-import Chart1 from "../components/dashboard/chart-1";
-import MainSection from "../components/layout-components/MainSection";
+import EmGauge from "../components/Dashboard/EmGauge";
+import ChartLegendItem from "../components/Charts/ChartLegendItem";
+import PieChart from "../components/Charts/PieChart";
+import Chart1 from "../components/Dashboard/chart-1";
 
 export default {
     components: {
-        MainSection,
         EmGauge,
         Chart1,
         PieChart,

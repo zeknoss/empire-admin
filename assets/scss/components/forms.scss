@@ -114,3 +114,17 @@ textarea {
     font-size:0.8em;
     letter-spacing:1px;
 }
+
+/**
+TinyMCE Styles
+ */
+.tox-tinymce {}
+.card-body {
+    .tox-tinymce {
+        border: 0;
+
+        .tox-statusbar {
+            border-top:0;
+        }
+    }
+}

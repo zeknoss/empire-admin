@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section">
+    <main-section>
         <b-alert show variant="silver">
             <h4 class="alert-heading">About Notifications System</h4>
             <p>The notifications system relies on Snotify package (vue-snotify), you can find a very detailed documentation regarding the component in the package documentation</p>
@@ -29,29 +29,29 @@
             <b-col cols="4">
                 <b-card title="Prompts" sub-title="Prompt users with actionable buttons">
                     <b-form-group label="Prompt Text" for="prompt-question">
-                        <b-form-input id="prompt-question" name="prompt-question" v-model="prompt.question"></b-form-input>
+                        <b-form-input id="prompt-question" name="prompt-question" v-model="prompt.question"/>
                     </b-form-group>
                     <b-row>
                         <b-col>
                             <b-form-group label="Accept Button Text" for="prompt-yes">
-                                <b-form-input id="prompt-yes" name="prompt-yes" v-model="prompt.yes"></b-form-input>
+                                <b-form-input id="prompt-yes" name="prompt-yes" v-model="prompt.yes"/>
                             </b-form-group>
                         </b-col>
                         <b-col>
                             <b-form-group label="Decline Button Text" for="prompt-no">
-                                <b-form-input id="prompt-no" name="prompt-no" v-model="prompt.no"></b-form-input>
+                                <b-form-input id="prompt-no" name="prompt-no" v-model="prompt.no"/>
                             </b-form-group>
                         </b-col>
                     </b-row>
                     <b-form-group label="Answer Input Placeholder Text" for="prompt-placeholder">
-                        <b-form-input id="prompt-placeholder" name="prompt-placeholder" v-model="prompt.placeholder"></b-form-input>
+                        <b-form-input id="prompt-placeholder" name="prompt-placeholder" v-model="prompt.placeholder"/>
                     </b-form-group>
                     <b-button variant="primary" block @click="promptNotification">Show Prompt</b-button>
                 </b-card>
 
                 <b-card title="Confirmations" sub-title="Ask the Users for Confirmation">
                     <b-form-group label="Confirm Text" for="confirm-question">
-                        <b-form-input id="confirm-question" name="confirm-question" v-model="confirm.question"></b-form-input>
+                        <b-form-input id="confirm-question" name="confirm-question" v-model="confirm.question"/>
                     </b-form-group>
                     <b-button variant="success" block @click="confirmNotification">Show Confirmation</b-button>
                 </b-card>
@@ -66,15 +66,18 @@
                     </b-form-group>
 
                     <b-form-group>
-                        <input-switch :status.sync="notificationOptions.showProgressBar" name="progbar" variant="purple" label="Show Progress Bar?"></input-switch>
+                        <ea-input-switch :status.sync="notificationOptions.showProgressBar" name="progbar"
+                                         variant="purple" label="Show Progress Bar?"/>
                     </b-form-group>
 
                     <b-form-group>
-                        <input-switch :status.sync="notificationOptions.pauseOnHover" name="pauseonh" variant="primary" label="Pause on Hover?"></input-switch>
+                        <ea-input-switch :status.sync="notificationOptions.pauseOnHover" name="pauseonh"
+                                         variant="primary" label="Pause on Hover?"/>
                     </b-form-group>
 
                     <b-form-group>
-                        <input-switch :status.sync="notificationOptions.closeOnClick" name="closeonclick" variant="warning" label="Close on Click?"></input-switch>
+                        <ea-input-switch :status.sync="notificationOptions.closeOnClick" name="closeonclick"
+                                         variant="warning" label="Close on Click?"/>
                     </b-form-group>
 
                     <b-form-group :label="'Timeout (' + notificationOptions.timeout + 'ms)'">
@@ -85,16 +88,14 @@
                 </b-card>
             </b-col>
         </b-row>
-    </section>
+    </main-section>
 </template>
 
 <script>
 import {storeMeta} from "~/helpers/mixins/storeMeta";
-import InputSwitch from "../../components/InputSwitch";
 
 export default {
     name: "Notifications",
-    components: {InputSwitch},
     data() {
         return {
             notificationOptions: {

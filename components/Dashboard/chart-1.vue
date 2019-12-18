@@ -40,8 +40,8 @@
 </template>
 
 <script>
-    import LineChart from "../charts/line-chart";
-    import ChartLegendItem from "../charts/chart-legend-item";
+    import LineChart from "../Charts/LineChart";
+    import ChartLegendItem from "../Charts/ChartLegendItem";
     export default {
         name: "chart-1",
         components: {ChartLegendItem, LineChart},

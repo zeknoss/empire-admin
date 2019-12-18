@@ -1,29 +1,21 @@
 <template>
     <div class="app-container" :class="[$store.state.sidebarVisible ? 'menu-active' : null]">
-
-        <sidebar/>
+        <ea-sidebar/>
 
         <section class="main-content">
-            <PageHeader/>
+            <ea-page-header/>
             <nuxt/>
         </section>
 
         <client-only>
-            <vue-snotify></vue-snotify>
+            <vue-snotify/>
         </client-only>
     </div>
 </template>
 
 <script>
-    import Sidebar from '~/components/layout-components/Sidebar';
-    import PageHeader from '~/components/layout-components/PageHeader';
-
     export default {
         "name": "Dashboard",
-        components: {
-            PageHeader,
-            Sidebar
-        },
         middleware: 'head',
         methods: {},
         watch: {
