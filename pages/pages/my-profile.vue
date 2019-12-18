@@ -118,7 +118,7 @@
 </template>
 
 <script>
-    import MainSection from "../../components/layout-components/MainSection";
+    import MainSection from "../../components/Layout/MainSection";
     import FormDivider from "../../components/Forms/FormDivider";
     export default {
         name: "my-profile",

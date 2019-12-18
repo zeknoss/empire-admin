@@ -28,9 +28,9 @@
 </template>
 
 <script>
-    import LineChart from "../components/charts/line-chart";
-    import ChartLegendItem from "../components/charts/chart-legend-item";
-    import PieChart from "../components/charts/pie-chart";
+    import LineChart from "../components/Charts/LineChart";
+    import ChartLegendItem from "../components/Charts/ChartLegendItem";
+    import PieChart from "../components/Charts/PieChart";
 
     export default {
         name: "charts",

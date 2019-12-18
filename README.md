@@ -17,8 +17,10 @@ Interested in a custom solution? Contact me at burak@burakgurbuz.com and let me 
 - [x] Profile Page
 - [x] Login
 - [x] Calendar
+- [ ] Timeline
+- [ ] Inbox
+- [ ] Tasks
 - [ ] Register
-- [ ] Much moar on its way!
 
 ### Components
 - [x] Generic Widgets
@@ -28,10 +30,12 @@ Interested in a custom solution? Contact me at burak@burakgurbuz.com and let me 
 - [x] Line Charts
 - [x] Pie Charts
 - [x] Notifications
+- [x] Forms (wip)
 - [ ] Area Charts
 - [ ] Spider Charts
 - [ ] Bar Charts
 - [ ] Widget preloader (wip)
+- [ ] Icons
 - [ ] Crapload of moar components on their way!
 
 ## Build Setup

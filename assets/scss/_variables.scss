@@ -9,6 +9,10 @@ $table-head-color: darken($text-muted,10%);
 // Forms
 $input-box-shadow: none;
 $input-border-radius-lg: 24px;
+$input-border-radius-sm: 24px;
+$input-placeholder-color: #cdcdcd;
+
+$input-group-addon-bg: transparent;
 
 // Cards
 $card-border-radius: $border-radius-sm;
@@ -25,6 +29,9 @@ $progress-box-shadow: none;
 $btn-box-shadow: none;
 $btn-active-box-shadow: none;
 $btn-focus-box-shadow: none;
+$btn-xl-multiplier: 1.1;
+$btn-border-radius: 32px;
+$btn-border-radius-lg: $btn-border-radius;
 
 // Toasts
 $snotify-confirm-border-color: $blue;

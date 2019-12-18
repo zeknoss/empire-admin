@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "InputSwitch",
+    name: "EaInputSwitch",
     props: {
         variant: {
             type: String,
