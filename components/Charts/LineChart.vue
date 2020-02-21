@@ -23,7 +23,7 @@ export default {
                 },
                 layout: {
                     padding: {
-                        top: 3
+                        top: 10
                     }
                 },
                 lineTension: .4,

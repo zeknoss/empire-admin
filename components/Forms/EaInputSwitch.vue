@@ -1,12 +1,14 @@
 <template>
     <label class="input-switch" :class="[ disabled && 'disabled', status ? 'on' : 'off' ]">
-        <input type="checkbox" :disabled="disabled" :name="name" :id="name" :checked="status" value="true" @input="$emit('update:status', $event.target.checked == true ? true : false)">
+        <input type="checkbox" :disabled="disabled" :name="name" :id="name" :checked="status" value="true"
+               @input="$emit('update:status', $event.target.checked == true)">
         <span class="toggle" :class="[ status && 'bg-' + variant ]"></span><span class="input-switch-label" v-html="label"></span>
     </label>
 </template>
 
 <script>
-export default {
+export default
+{
     name: "EaInputSwitch",
     props: {
         variant: {

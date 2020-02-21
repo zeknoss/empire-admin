@@ -1,5 +1,5 @@
 <template>
-    <main-section :header-title="$auth.user.name.full" header-bg="primary" header-subtitle="Edit your profile">
+    <ea-main-section :header-title="$auth.user.name.full" header-bg="primary" header-subtitle="Edit your profile">
         <b-row>
             <b-col md="6" lg="8" order="1" order-md="0">
                 <b-card header-bg-variant="gradient-pink-purple">
@@ -32,7 +32,7 @@
                             </b-form-group>
                         </b-col>
                     </b-row>
-                    <form-divider title="Change Password"></form-divider>
+                    <ea-form-divider title="Change Password"></ea-form-divider>
                     <b-row>
                         <b-col sm="6">
                             <b-form-group label="New Password">
@@ -45,7 +45,7 @@
                             </b-form-group>
                         </b-col>
                     </b-row>
-                    <form-divider title="Contact Information"></form-divider>
+                    <ea-form-divider title="Contact Information"></ea-form-divider>
                     <b-form-group label="Address">
                         <b-textarea placeholder="Address" no-resize size="lg" value="Lorem Ipsum St. Test Alley 2349-123 Coruscant"></b-textarea>
                     </b-form-group>
@@ -114,15 +114,12 @@
                 </b-card>
             </b-col>
         </b-row>
-    </main-section>
+    </ea-main-section>
 </template>
 
 <script>
-    import MainSection from "../../components/Layout/MainSection";
-    import FormDivider from "../../components/Forms/FormDivider";
     export default {
         name: "my-profile",
-        components: {FormDivider, MainSection},
         methods: {
             copyToClipboard(str) {
                 const el = document.createElement('textarea');

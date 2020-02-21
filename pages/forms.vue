@@ -1,5 +1,5 @@
 <template>
-    <main-section>
+    <ea-main-section>
         <b-row>
             <b-col cols="12" md="4">
                 <b-card title="Basic Components" sub-title="Various HTML inputs">
@@ -135,7 +135,7 @@
                 </b-card>
             </b-col>
         </b-row>
-    </main-section>
+    </ea-main-section>
 </template>
 
 <script>

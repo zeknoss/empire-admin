@@ -1,14 +1,16 @@
 import Vue from 'vue';
 
 // Layout components
-import EmPageHeader from "../components/Layout/EmPageHeader";
-import EmSidebar from "../components/Layout/EmSidebar";
-import MainSection from "../components/Layout/MainSection";
+import EaPageHeader from "../components/Layout/EaPageHeader";
+import EaSidebar from "../components/Layout/EaSidebar";
+import EaMainSection from "../components/Layout/EaMainSection";
 
 // Form components
 import EaInputSwitch from "../components/Forms/EaInputSwitch";
+import EaFormDivider from "../components/Forms/EaFormDivider";
 
-Vue.component('ea-page-header', EmPageHeader);
-Vue.component('ea-sidebar', EmSidebar);
+Vue.component('ea-page-header', EaPageHeader);
+Vue.component('ea-sidebar', EaSidebar);
 Vue.component('ea-input-switch', EaInputSwitch);
-Vue.component('main-section', MainSection);
+Vue.component('ea-main-section', EaMainSection);
+Vue.component('ea-form-divider', EaFormDivider);

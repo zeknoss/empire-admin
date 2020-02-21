@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section">
+    <ea-main-section class="main-section">
         <b-card-group columns>
             <b-card title="Headings">
                 <h1>Heading 1</h1>
@@ -100,7 +100,7 @@
                 </dl>
             </b-card>
         </b-card-group>
-    </section>
+    </ea-main-section>
 </template>
 
 <script>

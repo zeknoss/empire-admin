@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        name: "FormDivider",
+        name: "EaFormDivider",
         props: {
             title: String
         },

@@ -1,17 +1,17 @@
 <template>
-    <main-section>
+    <ea-main-section>
         <b-row>
             <b-col cols="12" md="3">
-                <em-gauge type="success" icon="bell" title="Nerfs<br>Herded" content="23"></em-gauge>
+                <ea-gauge type="success" icon="bell" title="Nerfs<br>Herded" content="23"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <em-gauge type="purple" icon="check" title="People Screamed<br>At Same Time" content="Millions"></em-gauge>
+                <ea-gauge type="purple" icon="check" title="People Screamed<br>At Same Time" content="Millions"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <em-gauge type="info" icon="exclamation-triangle" title="Darths<br>Vaded" content="1"></em-gauge>
+                <ea-gauge type="info" icon="exclamation-triangle" title="Darths<br>Vaded" content="1"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <em-gauge type="warning" icon="exclamation-circle" title="Deathstars<br>Destroyed" content="2"></em-gauge>
+                <ea-gauge type="warning" icon="exclamation-circle" title="Deathstars<br>Destroyed" content="2"></ea-gauge>
             </b-col>
         </b-row>
 
@@ -174,19 +174,19 @@
                 </b-card>
             </b-col>
         </b-row>
-    </main-section>
+    </ea-main-section>
 </template>
 
 <script>
 import {map} from "lodash";
-import EmGauge from "../components/Dashboard/EmGauge";
 import ChartLegendItem from "../components/Charts/ChartLegendItem";
 import PieChart from "../components/Charts/PieChart";
 import Chart1 from "../components/Dashboard/chart-1";
+import EaGauge from "../components/Dashboard/EaGauge";
 
 export default {
     components: {
-        EmGauge,
+        EaGauge,
         Chart1,
         PieChart,
         ChartLegendItem,

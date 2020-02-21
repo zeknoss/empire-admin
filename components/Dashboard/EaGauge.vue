@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        name: "EmGauge",
+        name: "EaGauge",
         props: [
             'type',
             'icon',

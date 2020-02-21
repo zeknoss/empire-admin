@@ -56,7 +56,7 @@
 import {mapGetters} from "vuex";
 
 export default {
-    name: "PageHeader",
+    name: "EaPageHeader",
     data(){
         return {
             searchTerm: null

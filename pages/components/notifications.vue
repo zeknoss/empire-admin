@@ -1,5 +1,5 @@
 <template>
-    <main-section>
+    <ea-main-section>
         <b-alert show variant="silver">
             <h4 class="alert-heading">About Notifications System</h4>
             <p>The notifications system relies on Snotify package (vue-snotify), you can find a very detailed documentation regarding the component in the package documentation</p>
@@ -88,7 +88,7 @@
                 </b-card>
             </b-col>
         </b-row>
-    </main-section>
+    </ea-main-section>
 </template>
 
 <script>

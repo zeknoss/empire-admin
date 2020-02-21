@@ -1,5 +1,5 @@
 <template>
-    <main-section header-title="FullCalendar 4" header-subtitle="Easily display your calendar events" header-bg="primary">
+    <ea-main-section header-title="FullCalendar 4" header-subtitle="Easily display your calendar events" header-bg="primary">
         <div slot="header-end" class="text-nowrap">
             <b-button variant="primary" @click="prev"><i class="fas fa-angle-left"></i></b-button>
             <b-button variant="primary" @click="next" class="mr-3"><i class="fas fa-angle-right"></i></b-button>
@@ -42,18 +42,14 @@
                 </b-form-group>
             </div>
         </b-modal>
-    </main-section>
+    </ea-main-section>
 </template>
 
 <script>
-    import MainSection from "../../components/Layout/MainSection";
     import {findIndex} from "lodash";
 
     export default {
         name: "calendar",
-        components: {
-            MainSection,
-        },
         methods: {
             /**
              * Advance to the previous date range

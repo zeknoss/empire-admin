@@ -13,7 +13,7 @@
 
 <script>
     export default {
-        name: "MainSection",
+        name: "EaMainSection",
         props: {
             mode: {
                 default: 'fluid'
