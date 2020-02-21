@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section"></section>
+    <ea-main-section></ea-main-section>
 </template>
 
 <script>

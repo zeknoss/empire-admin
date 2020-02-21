@@ -1,8 +1,9 @@
 .gauge {
-    border-radius:1em;
     overflow:hidden;
     margin-bottom:15px;
-    text-align:center;
+    background:#fff;
+    border-radius:32px;
+    box-shadow: $box-shadow-sm;
 
     .col {
         min-height: 64px;
@@ -12,17 +13,20 @@
         font-size: 1.5rem;
         max-width:64px;
         padding:0 1.2rem;
+        border-radius:0 32px 32px 0;
+        text-align:center;
     }
     h4, h5, p, i {
         line-height:1;
         margin: auto;
     }
     h4 {
-        font-size:2.2em;
+        font-size:2em;
     }
     h5 {
-        font-size:1.2em;
-        font-weight:bold;
+        font-size:1em;
+        color: $gray-600 !important;
+        font-weight:500;
     }
     p {
         font-size:0.8em;
@@ -31,17 +35,16 @@
 
 @each $color, $colorCode in $theme-colors {
     .gauge-#{$color} {
-        background: $colorCode linear-gradient(90deg, darken($colorCode,10%),$colorCode);
-        color: #fff;
+        color: $colorCode;
         font-weight:bold;
-        box-shadow: $box-shadow;
 
         .col-icon {
-            background:rgba(lighten($colorCode,5%), .7);
+            background:$colorCode;
+            color:#fff;
         }
 
         .col:last-child {
-            background:rgba(darken($colorCode,10%),.7);
+            border-color:rgba(darken($colorCode,10%),.7);
         }
     }
 }

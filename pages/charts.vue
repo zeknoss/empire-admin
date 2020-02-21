@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section">
+    <ea-main-section>
         <b-row>
             <b-col cols="8">
                 <b-card title="Line Chart">
@@ -24,7 +24,7 @@
                 </b-card>
             </b-col>
         </b-row>
-    </section>
+    </ea-main-section>
 </template>
 
 <script>

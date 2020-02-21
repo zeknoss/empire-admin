@@ -36,7 +36,7 @@ import SitemapNode from "./SitemapNode";
 import Sitemap from "~/data/sitemap";
 
 export default {
-    name: "Sidebar",
+    name: "EaSidebar",
     components: {SitemapNode},
     methods: {
         updateDateTime () {
