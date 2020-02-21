@@ -2,16 +2,16 @@
     <ea-main-section>
         <b-row>
             <b-col cols="12" md="3">
-                <ea-gauge type="success" icon="bell" title="Nerfs<br>Herded" content="23"></ea-gauge>
+                <ea-gauge type="success" icon="bell" title="Nerfs Herded" content="23 nerfs"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <ea-gauge type="purple" icon="check" title="People Screamed<br>At Same Time" content="Millions"></ea-gauge>
+                <ea-gauge type="purple" icon="check" title="People Screamed At Same Time" content="Millions"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <ea-gauge type="info" icon="exclamation-triangle" title="Darths<br>Vaded" content="1"></ea-gauge>
+                <ea-gauge type="info" icon="exclamation-triangle" title="Darths Vaded" content="1 Darths"></ea-gauge>
             </b-col>
             <b-col cols="12" md="3">
-                <ea-gauge type="warning" icon="exclamation-circle" title="Deathstars<br>Destroyed" content="2"></ea-gauge>
+                <ea-gauge type="warning" icon="exclamation-circle" title="Deathstars Destroyed" content="2 Deathstars"></ea-gauge>
             </b-col>
         </b-row>
 

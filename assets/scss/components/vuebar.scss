@@ -53,5 +53,8 @@
 
     .vb-content {
         -ms-overflow-style: none;
+        @-moz-document url-prefix() {
+            scrollbar-width:none;
+        }
     }
 }
