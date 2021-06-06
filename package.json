@@ -27,7 +27,7 @@
         "bootstrap-vue": "^2.0.0",
         "chart.js": "^2.9.4",
         "js-cookie": "^2.2.1",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "nuxt": "^2.0.0",
         "vue-chartjs": "^3.5.0",
         "vue-moment": "^4.1.0",
