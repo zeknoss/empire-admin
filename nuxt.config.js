@@ -67,7 +67,7 @@ export default {
     modules: [
         ['bootstrap-vue/nuxt', {css: false}],
         // Remember to set the baseUrl setting for axios if you want to use it
-        ['@nuxtjs/axios', {baseURL: 'https://empireapi.burak.pro'}],
+        ['@nuxtjs/axios', {baseURL: 'https://empireapi.burakgurbuz.com'}],
         '@nuxtjs/auth',
         '@nuxtjs/pwa',
     ],
